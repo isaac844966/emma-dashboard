@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import Wrapper from "../assets/Wrappers/Header";
-import { FaMoon } from "react-icons/fa";
-import { FaRegMoon } from "react-icons/fa";
+import { MdOutlineToggleOn } from "react-icons/md";
+import { MdOutlineToggleOff } from "react-icons/md";
 
 const Header = ({ onSetTheme, theme }) => {
   const handleSetTheme = () => {
@@ -18,9 +18,13 @@ const Header = ({ onSetTheme, theme }) => {
         </div>
         <div className="toggleTheme">
           <h4 style={{ color: theme ? "black" : "white" }}>Dark Mode</h4>
-          <button onClick={handleSetTheme}>
-            {theme ? <FaRegMoon /> : <FaMoon />}
-          </button>
+          <div className="button" onClick={handleSetTheme}>
+            {theme ? (
+              <MdOutlineToggleOff />
+            ) : (
+              <MdOutlineToggleOn className="dark-btn" />
+            )}
+          </div>
         </div>
       </header>
     </Wrapper>

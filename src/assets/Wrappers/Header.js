@@ -27,11 +27,15 @@ const Wrapper = styled.section`
     gap: 1rem;
     align-items: center;
   }
-  button {
+  .button {
     border: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-top: 0.5rem;
     background-color: transparent;
     cursor: pointer;
+  }
+  .dark-btn {
+    color: hsl(146, 68%, 55%);
   }
   @media screen and (min-width: 1000px) {
     header {

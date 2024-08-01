@@ -11,7 +11,7 @@ const OverveiwCard = ({ name, counts, icon, day, theme, color }) => {
           <img src={icon} alt={name} />
         </div>
         <div className="counts">
-          <h2 style={{ color: theme ? "black" : "white" }}>{counts}</h2>
+          <h2 className={theme ? "darkText" : "lightText"}>{counts}</h2>
           <p style={{ color: color }}>-{day}</p>
         </div>
       </div>

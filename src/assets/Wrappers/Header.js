@@ -31,6 +31,7 @@ const Wrapper = styled.section`
     border: none;
     font-size: 1.5rem;
     background-color: transparent;
+    cursor: pointer;
   }
   @media screen and (min-width: 1000px) {
     header {

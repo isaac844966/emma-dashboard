@@ -67,19 +67,23 @@ const overviewCardData = [
 const OverViewCardContainer = ({ theme }) => {
   return (
     <Wrapper>
-      <div className="wrapper">
-        {overviewCardData.map((card, index) => (
-          <OverveiwCard
-            key={index}
-            name={card.name}
-            icon={card.icon}
-            counts={card.counts}
-            day={card.day}
-            color={card.color}
-            theme={theme}
-          />
-        ))}
-      </div>
+      <>
+        <h1 className={theme ? "darkText" : "lightText"}>Overview - Today</h1>
+
+        <div className="wrapper">
+          {overviewCardData.map((card, index) => (
+            <OverveiwCard
+              key={index}
+              name={card.name}
+              icon={card.icon}
+              counts={card.counts}
+              day={card.day}
+              color={card.color}
+              theme={theme}
+            />
+          ))}
+        </div>
+      </>
     </Wrapper>
   );
 };

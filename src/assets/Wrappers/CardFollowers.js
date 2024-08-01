@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const Wrapper = styled.section`
   .card {
-    /* background-color: var(--Very-Pale-Blue-Top-BG-Pattern); */
     padding: 2rem;
     margin: 0 auto;
     margin-bottom: 1rem;
@@ -14,14 +13,10 @@ const Wrapper = styled.section`
     flex-direction: column;
     gap: 1rem;
     position: relative;
+    cursor: pointer;
+    transition: ease 0.5s;
   }
-  /* .card::before {
-    content: "";
-    height: 4px;
-    position: absolute;
-    top: 0;
-    background-color: red;
-  } */
+
   .header {
     display: flex;
     align-items: center;
@@ -48,7 +43,7 @@ const Wrapper = styled.section`
   .twitter {
     height: 5px;
     width: 100%;
-    background-color: red;
+    background-color: hsl(203, 89%, 53%);
     position: absolute;
     top: 0;
     border-radius: 8px 8px 0 0;
@@ -74,6 +69,12 @@ const Wrapper = styled.section`
   }
   .bg-dark {
     background-color: #252b43;
+  }
+  .bg-dark:hover {
+    background-color: #333a56;
+  }
+  .bg-light:hover {
+    background-color: #e1e3f0;
   }
   @media only screen and (min-width: 1000px) {
     width: 20rem;

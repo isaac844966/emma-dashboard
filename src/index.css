@@ -29,9 +29,11 @@ body {
 }
 .whiteBg {
   background-color: var(--white);
+  transition: ease 0.5s;
 }
 .darkBg {
   background-color: #1d2029;
+  transition: ease 0.5s;
 }
 .wrapper-container {
   max-width: 100rem;
